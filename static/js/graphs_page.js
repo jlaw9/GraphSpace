@@ -2269,10 +2269,9 @@ var cytoscapeGraph = {
          */
         cy.style()
             .selector('node').style({
-                'font-size': "0px"
+                'content': ''
             })
-            .update(); // update the elements in the graph with the new style
-
+            .update();
     },
     showGraphInformation: function (cy) {
         /*
@@ -2280,10 +2279,10 @@ var cytoscapeGraph = {
          */
         cy.style()
             .selector('node').style({
-                'font-size': "16px"
+                'content': 'data(label)'
             })
             .update();
-        console.log('done');
+        //console.log('now showing labels3');
     },
     getRenderedNodePositionsMap: function (cy) {
         var result = {};
