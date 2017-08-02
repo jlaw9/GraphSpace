@@ -2282,7 +2282,7 @@ var cytoscapeGraph = {
                 'content': 'data(label)'
             })
             .update();
-        //console.log('now showing labels3');
+        //console.log('now showing labels');
     },
     getRenderedNodePositionsMap: function (cy) {
         var result = {};
